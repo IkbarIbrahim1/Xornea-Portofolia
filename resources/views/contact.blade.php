@@ -9,10 +9,10 @@
         <div class="row align-items-center min-vh-60">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                 <h1 class="display-4 display-md-3 fw-bold mb-4 text-center text-lg-start">Kontak & Mulai Sekarang</h1>
-                <p class="lead text-center text-lg-start mb-4 text-responsive">Siap memulai perjalanan publikasi Anda? Hubungi tim expert kami dan dapatkan konsultasi gratis!</p>
+                <p class="lead text-center text-lg-start mb-4">Siap memulai perjalanan publikasi Anda? Hubungi tim expert kami dan dapatkan konsultasi gratis!</p>
                 
                 <!-- Quick Contact Options -->
-                <div class="btn-group-responsive">
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
                     <a href="https://wa.me/6285643219215" class="btn btn-success btn-lg pulse" target="_blank">
                         <i class="fab fa-whatsapp me-2"></i>WhatsApp Langsung
                     </a>
@@ -40,18 +40,18 @@
 <section class="section-padding bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title spacing-responsive" data-aos="fade-up">Hubungi Kami</h2>
-            <p class="section-subtitle text-responsive" data-aos="fade-up" data-aos-delay="100">Berbagai cara untuk terhubung dengan tim Xornea</p>
+            <h2 class="section-title" data-aos="fade-up">Hubungi Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Berbagai cara untuk terhubung dengan tim Xornea</p>
         </div>
         
-        <div class="grid-responsive">
-            <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="card border-0 shadow-lg h-100 text-center p-4 p-mobile-3">
-                    <div class="feature-icon text-success mx-auto">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card b  order-0 shadow-lg h-100 text-center p-4">
+                    <div class="feature-icon text-success">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">WhatsApp</h4>
-                    <p class="text-muted mb-4 text-responsive">Respon tercepat untuk konsultasi langsung</p>
+                    <h4 class="fw-bold mb-3">WhatsApp</h4>
+                    <p class="text-muted mb-4">Respon tercepat untuk konsultasi langsung</p>
                     <h5 class="fw-bold text-primary mb-3">+62 856-4321-9215</h5>
                     <p class="small text-muted mb-4">Online 24/7 | Respon < 1 menit</p>
                     <a href="https://wa.me/6285643219215" class="btn btn-success w-100" target="_blank">
@@ -60,13 +60,13 @@
                 </div>
             </div>
             
-            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="card border-0 shadow-lg h-100 text-center p-4 p-mobile-3">
-                    <div class="feature-icon text-primary mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card border-0 shadow-lg h-100 text-center p-4">
+                    <div class="feature-icon text-primary">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">Email</h4>
-                    <p class="text-muted mb-4 text-responsive">Untuk konsultasi detail dan proposal</p>
+                    <h4 class="fw-bold mb-3">Email</h4>
+                    <p class="text-muted mb-4">Untuk konsultasi detail dan proposal</p>
                     <h5 class="fw-bold text-primary mb-3">info@xornea.com</h5>
                     <p class="small text-muted mb-4">Respon dalam 2-4 jam</p>
                     <a href="mailto:info@xornea.com" class="btn btn-primary w-100">
@@ -75,17 +75,17 @@
                 </div>
             </div>
             
-            <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="card border-0 shadow-lg h-100 text-center p-4 p-mobile-3">
-                    <div class="feature-icon text-danger mx-auto">
-                        <i class="fab fa-instagram"></i>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow-lg h-100 text-center p-4">
+                    <div class="feature-icon text-danger">
+                        <i class="fas fa-phone"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">Instagram</h4>
-                    <p class="text-muted mb-4 text-responsive">Untuk konsultasi via instagram</p>
+                    <h4 class="fw-bold mb-3">Instagram</h4>
+                    <p class="text-muted mb-4">Untuk konsultasi via instagram</p>
                     <h5 class="fw-bold text-primary mb-3">xornea.id</h5>
                     <p class="small text-muted mb-4">Online 24/7 | Respon < 1 menit</p>
-                    <a href="https://www.instagram.com/xornea.id/?__pwa=1" class="btn btn-danger w-100" target="_blank">
-                        <i class="fab fa-instagram me-2"></i>Chat Instagram
+                    <a href="https://www.instagram.com/xornea.id/?__pwa=1" class="btn btn-danger w-100">
+                        <i class="fas fa-phone me-2"></i>Chat Instagram
                     </a>
                 </div>
             </div>

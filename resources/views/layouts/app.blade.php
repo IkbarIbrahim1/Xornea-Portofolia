@@ -29,33 +29,6 @@
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
             color: var(--dark-color);
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-
-        html {
-            overflow-x: hidden; /* Prevent horizontal scroll on html */
-        }
-
-        /* Prevent any container from causing horizontal scroll */
-        * {
-            box-sizing: border-box;
-        }
-
-        .container, .container-fluid {
-            overflow-x: hidden;
-            max-width: 100%;
-        }
-
-        /* Ensure rows don't cause overflow */
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-            overflow-x: hidden;
-        }
-
-        [class*="col-"] {
-            padding-left: 15px;
-            padding-right: 15px;
         }
 
         /* Global Animations */
@@ -110,100 +83,7 @@
             animation: pulse 2s infinite;
         }
 
-        /* ================================
-           RESPONSIVE UTILITY CLASSES
-           ================================ */
-        
-        /* Responsive text utilities */
-        .text-responsive {
-            font-size: 1rem;
-        }
-        
-        @media (min-width: 641px) and (max-width: 1024px) {
-            .text-responsive {
-                font-size: 1.1rem;
-            }
-        }
-        
-        @media (min-width: 1025px) {
-            .text-responsive {
-                font-size: 1.2rem;
-            }
-        }
-        
-        /* Responsive spacing utilities */
-        .spacing-responsive {
-            margin-bottom: 1rem;
-        }
-        
-        @media (min-width: 641px) and (max-width: 1024px) {
-            .spacing-responsive {
-                margin-bottom: 1.5rem;
-            }
-        }
-        
-        @media (min-width: 1025px) {
-            .spacing-responsive {
-                margin-bottom: 2rem;
-            }
-        }
-        
-        /* Responsive grid utilities */
-        .grid-responsive {
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: 1fr;
-        }
-
-        @media (max-width: 640px) {
-            .grid-responsive {
-                display: none;
-            }
-        }
-        
-        @media (min-width: 641px) and (max-width: 1024px) {
-            .grid-responsive {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-        }
-        
-        @media (min-width: 1025px) {
-            .grid-responsive {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
-            }
-        }
-        
-        /* Special grid for home features (2x2 layout) */
-        .home-features-grid {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-columns: 1fr;
-        }
-        
-        @media (min-width: 641px) {
-            .home-features-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
-            }
-        }
-        
-        /* Responsive button groups */
-        .btn-group-responsive {
-            display: flex;
-            gap: 1rem;
-            flex-direction: column;
-        }
-        
-        @media (min-width: 641px) {
-            .btn-group-responsive {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-
-        /* Enhanced Mobile Responsive Utilities */
+        /* Mobile Responsive Utilities */
         .min-vh-50 { min-height: 50vh; }
         .min-vh-60 { min-height: 60vh; }
         .min-vh-75 { min-height: 75vh; }
@@ -271,29 +151,11 @@
         }
 
         .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
             backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.95) !important;
+            background: rgba(255, 255, 255, 0.98) !important;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            z-index: 1050;
-        }
-
-        /* Add padding to body to compensate for fixed navbar */
-        body {
-            padding-top: 80px;
-        }
-
-        /* Navbar scroll effect */
-        .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.98) !important;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
         }
 
         .navbar-brand {
@@ -569,453 +431,136 @@
             box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
         }
 
-        /* ================================
-           RESPONSIVE DESIGN SYSTEM
-           Mobile (≤ 640px) | Tablet (641px-1024px) | Desktop (≥ 1025px)
-           ================================ */
-
-        /* DESKTOP - Desktop/Monitor (≥ 1025px) */
-        @media (min-width: 1025px) {
-            body {
-                padding-top: 80px;
-            }
-            
-            .container, .container-lg, .container-md, .container-sm, .container-xl {
-                max-width: 1200px;
-            }
-            
-            .hero-section {
-                padding: 120px 0;
-            }
-            
-            .section-padding {
-                padding: 100px 0;
-            }
-            
-            .section-title {
-                font-size: 3rem;
-            }
-            
-            .display-4 {
-                font-size: 3.5rem !important;
-            }
-            
-            .display-md-3 {
-                font-size: 4rem !important;
-            }
-            
-            .lead {
-                font-size: 1.3rem;
-            }
-            
-            .btn-lg {
-                padding: 1rem 2.5rem;
-                font-size: 1.1rem;
-            }
-            
-            .feature-icon {
-                width: 90px;
-                height: 90px;
-                font-size: 2rem;
-            }
-            
-            .testimonial-card {
-                padding: 3rem;
-            }
-            
-            .card {
-                margin-bottom: 2rem;
-            }
-        }
-
-        /* TABLET - Tablet Layout (641px - 1024px) */
-        @media (min-width: 641px) and (max-width: 1024px) {
-            body {
-                padding-top: 75px;
-                overflow-x: hidden;
-                max-width: 100vw;
-            }
-            
-            .container {
-                width: 90%;
-                max-width: 950px;
-                overflow-x: hidden;
-            }
-            
-            .row {
-                margin-left: 0;
-                margin-right: 0;
-                max-width: 100%;
-                overflow-x: hidden;
-            }
-            
-            [class*="col-"] {
-                max-width: 100%;
-                box-sizing: border-box;
-            }
-            
-            .hero-section {
-                padding: 100px 0 80px 0;
-                overflow-x: hidden;
-                max-width: 100%;
-            }
-            
-            .section-padding {
-                padding: 80px 0;
-                overflow-x: hidden;
-                max-width: 100%;
-            }
-            
-            .grid-responsive, .home-features-grid {
-                max-width: 100%;
-                overflow-x: hidden;
-            }
-            
-            .card, .feature-item, .service-item, .testimonial-card, .pricing-card {
-                max-width: 100%;
-                overflow: hidden;
-                box-sizing: border-box;
-            }
-            
-            img {
-                max-width: 100% !important;
-                height: auto !important;
-            }
-            
-            .section-title {
-                font-size: 2.5rem;
-            }
-            
-            .display-4 {
-                font-size: 2.8rem !important;
-            }
-            
-            .display-md-3 {
-                font-size: 3.2rem !important;
-            }
-            
-            .lead {
-                font-size: 1.2rem;
-            }
-            
-            .btn-lg {
-                padding: 0.875rem 2rem;
-                font-size: 1.05rem;
-            }
-            
-            .feature-icon {
-                width: 85px;
-                height: 85px;
-                font-size: 1.9rem;
-            }
-            
-            .testimonial-card {
-                padding: 2.5rem;
-            }
-            
-            .pricing-card.featured {
-                transform: scale(1.05);
-            }
-            
-            /* 2-column layout for tablets */
-            .row .col-lg-4:nth-child(3n) {
-                margin-top: 2rem;
-            }
-            
-            .navbar-brand {
-                font-size: 1.6rem;
-            }
-            
-            .navbar-brand img {
-                height: 32px;
-            }
-        }
-
-        /* MOBILE - Mobile/Phone Layout (≤ 640px) */
-        @media (max-width: 640px) {
-            body {
-                padding-top: 80px !important;
-                overflow-x: hidden !important;
-                width: 100%;
-                max-width: 100vw;
-            }
-            
-            .container {
-                width: 100%;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                max-width: 100% !important;
-                overflow-x: hidden;
-            }
-            
-            .row {
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                max-width: 100%;
-                overflow-x: hidden;
-            }
-            
-            [class*="col-"] {
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
-                max-width: 100%;
-            }
-            
-            /* Prevent images from overflowing */
-            img {
-                max-width: 100% !important;
-                height: auto !important;
-            }
-            
-            /* Prevent cards and elements from overflowing */
-            .card, .feature-item, .service-item, .testimonial-card, .pricing-card {
-                max-width: 100%;
-                overflow: hidden;
-                box-sizing: border-box;
-            }
-            
-            /* Mobile Navbar - Clean and Simple */
+        @media (max-width: 768px) {
             .navbar {
-                background: #ffffff !important;
+                background: rgba(255, 255, 255, 1) !important;
                 backdrop-filter: none;
-                padding: 1rem 0 !important;
-                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-                border-bottom: 1px solid #e5e7eb;
-            }
-            
-            .navbar .container {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding: 0.5rem 0;
             }
             
             .navbar-brand {
-                font-size: 1.4rem !important;
-                color: #1e40af !important;
-                font-weight: 700;
+                font-size: 1.4rem;
             }
             
             .navbar-brand img {
-                height: 30px !important;
-                max-width: 100%;
-            }
-            
-            .navbar-toggler {
-                border: 2px solid #e5e7eb;
-                padding: 0.5rem;
-                border-radius: 6px;
-                background: transparent;
-            }
-            
-            .navbar-toggler:focus {
-                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-                border-color: #3b82f6;
-            }
-            
-            .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                height: 28px;
             }
             
             .navbar-collapse {
                 background: white;
-                margin: 1rem -1rem 0 -1rem;
-                padding: 1.5rem 1rem;
-                border-top: 1px solid #f3f4f6;
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            }
-            
-            .navbar-nav {
-                margin: 0;
-            }
-            
-            .nav-item {
-                margin-bottom: 0.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                margin-top: 0.5rem;
+                padding: 1rem;
             }
             
             .nav-link {
-                padding: 1rem 0 !important;
-                font-size: 1.1rem !important;
-                font-weight: 600 !important;
-                color: #374151 !important;
-                border-bottom: 1px solid #f9fafb;
-                margin-bottom: 0.5rem;
-                transition: all 0.3s ease;
+                padding: 0.75rem 0 !important;
+                border-bottom: 1px solid #f3f4f6;
+                margin-bottom: 0.25rem;
             }
             
-            .nav-link:hover {
-                color: #2563eb !important;
-                background-color: #f8fafc;
-                padding-left: 1rem !important;
-            }
-            
-            .nav-item:last-child .nav-link {
+            .nav-link:last-child {
                 border-bottom: none;
                 margin-bottom: 0;
             }
             
-            /* Fix grid responsive overflow */
-            .grid-responsive {
-                max-width: 100%;
-                overflow-x: hidden;
-                grid-template-columns: 1fr !important;
-                width: 100%;
-            }
-            
-            .home-features-grid {
-                max-width: 100%;
-                overflow-x: hidden;
-                grid-template-columns: 1fr !important;
-                width: 100%;
-            }
-            
-            /* Fix potential button overflow */
-            .btn-group-responsive {
-                max-width: 100%;
-                flex-direction: column;
-                overflow-x: hidden;
-            }
-            
-            .btn {
-                max-width: 100%;
-                word-wrap: break-word;
-                box-sizing: border-box;
-            }
-            
-            /* Fix floating shapes that might cause overflow */
-            .floating-shape {
-                display: none !important;
-            }
-            
-            /* Fix any potential text overflow */
-            h1, h2, h3, h4, h5, h6, p, .lead {
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                max-width: 100%;
-                box-sizing: border-box;
-            }
-            
-            /* Fix hero section potential overflow */
             .hero-section {
-                overflow-x: hidden;
-                width: 100%;
-                max-width: 100%;
-                padding: 120px 0 60px 0 !important;
-                margin-top: 0 !important;
-            }
-            
-            /* Fix section potential overflow */
-            .section-padding {
-                overflow-x: hidden;
-                width: 100%;
-                max-width: 100%;
-                padding: 60px 0;
+                padding: 80px 0 60px 0;
             }
             
             .section-title {
                 font-size: 2rem;
-                line-height: 1.2;
-            }
-            
-            .display-4 {
-                font-size: 2.2rem !important;
-                line-height: 1.2;
-            }
-            
-            .display-md-3 {
-                font-size: 2.5rem !important;
-                line-height: 1.2;
-            }
-            
-            .lead {
-                font-size: 1.1rem;
-                line-height: 1.5;
-            }
-            
-            .btn-lg {
-                padding: 1rem 1.5rem;
-                font-size: 1.1rem;
-                width: 100%;
-                margin-bottom: 1rem;
-            }
-            
-            .btn-group-mobile {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .feature-icon {
-                width: 70px;
-                height: 70px;
-                font-size: 1.5rem;
-            }
-            
-            .testimonial-card {
-                padding: 1.5rem;
-                margin-bottom: 2rem;
-            }
-            
-            .pricing-card {
-                margin-bottom: 2rem;
             }
             
             .pricing-card.featured {
                 transform: none;
             }
             
+            .display-4 {
+                font-size: 2.2rem !important;
+            }
+            
+            .display-md-3 {
+                font-size: 2.8rem !important;
+            }
+            
+            .min-vh-75 {
+                min-height: 60vh;
+            }
+            
+            .min-vh-60 {
+                min-height: 50vh;
+            }
+            
+            .section-padding {
+                padding: 3rem 0;
+            }
+            
+            .floating-shape {
+                display: none;
+            }
+            
             .feature-item {
-                margin-bottom: 2rem;
-                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
             }
             
             .card:hover {
                 transform: none;
             }
-            
-            .min-vh-75 {
-                min-height: 50vh;
+        }
+        
+        @media (max-width: 576px) {
+            .btn-lg {
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
             }
             
-            .min-vh-60 {
-                min-height: 40vh;
+            .display-4 {
+                font-size: 1.8rem !important;
             }
             
-            /* Mobile-specific utilities */
-            .text-center-mobile {
-                text-align: center !important;
+            .lead {
+                font-size: 1.1rem;
             }
             
-            .mb-mobile-4 {
-                margin-bottom: 2rem !important;
+            .feature-item span {
+                font-size: 0.9rem;
             }
             
-            .p-mobile-3 {
-                padding: 1.5rem !important;
+            .hero-section {
+                padding: 2rem 0;
+                margin-top: 60px;
             }
             
-            /* Ensure no elements interfere with mobile navbar */
-            .floating-shape, .floating-circle, .floating-triangle {
-                display: none !important;
+            .section-padding {
+                padding: 2rem 0;
             }
             
-            /* Fix any remaining overflow issues */
-            * {
-                max-width: 100%;
-                box-sizing: border-box;
+            .navbar-brand {
+                font-size: 1.1rem;
             }
             
-            /* Specific fixes for Bootstrap responsive issues */
-            .container-fluid {
-                overflow-x: hidden;
-                max-width: 100%;
+            .navbar-brand img {
+                height: 25px;
             }
             
-            .row {
-                --bs-gutter-x: 1.5rem;
+            .navbar-toggler {
+                padding: 2px 6px;
+                font-size: 0.8rem;
+            }
+            
+            .pricing-card {
+                margin-bottom: 2rem;
             }
         }
         
-        /* Enhanced Tablet/Mobile Navbar Fixes */
-        @media (max-width: 1024px) {
+        /* Enhanced Mobile Navbar Fixes */
+        @media (max-width: 991.98px) {
             .navbar-collapse {
                 background: white;
                 border-radius: 8px;
@@ -1447,7 +992,6 @@
             initializeTouchInteractions();
             initializeKeyboardNavigation();
             initializeProgressiveEnhancement();
-            initializeNavbarScrollEffect();
         });
 
         // Initialize interactive elements
@@ -1557,56 +1101,6 @@
                     });
                 });
             }
-        }
-
-        // Initialize navbar scroll effect
-        function initializeNavbarScrollEffect() {
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
-            let isScrolled = false;
-
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                // Add/remove scrolled class based on scroll position
-                if (scrollTop > 50 && !isScrolled) {
-                    navbar.classList.add('scrolled');
-                    isScrolled = true;
-                } else if (scrollTop <= 50 && isScrolled) {
-                    navbar.classList.remove('scrolled');
-                    isScrolled = false;
-                }
-
-                // Optional: Hide/show navbar on scroll (uncomment if wanted)
-                /*
-                if (scrollTop > lastScrollTop && scrollTop > 100) {
-                    // Scrolling down - hide navbar
-                    navbar.style.transform = 'translateY(-100%)';
-                } else {
-                    // Scrolling up - show navbar
-                    navbar.style.transform = 'translateY(0)';
-                }
-                */
-                
-                lastScrollTop = scrollTop;
-            }, { passive: true });
-
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const navbarHeight = navbar.offsetHeight;
-                        const targetPosition = target.offsetTop - navbarHeight - 20;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
         }
 
         // Initialize keyboard navigation

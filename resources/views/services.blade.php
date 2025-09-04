@@ -9,10 +9,10 @@
         <div class="row align-items-center min-vh-60">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                 <h1 class="display-4 display-md-3 fw-bold mb-4 text-center text-lg-start">Layanan Lengkap Publikasi Akademik</h1>
-                <p class="lead text-center text-lg-start mb-4 text-responsive">Dari penulisan hingga publikasi, kami menyediakan solusi end-to-end untuk setiap kebutuhan penelitian Anda.</p>
+                <p class="lead text-center text-lg-start mb-4">Dari penulisan hingga publikasi, kami menyediakan solusi end-to-end untuk setiap kebutuhan penelitian Anda.</p>
                 
                 <!-- Quick Service Selector -->
-                <div class="btn-group-responsive mb-4">
+                <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start mb-4">
                     <button class="btn btn-primary" onclick="scrollToSection('services-overview')">
                         <i class="fas fa-list me-2"></i>Lihat Semua Layanan
                     </button>
@@ -50,21 +50,21 @@
 </section>
 
 <!-- Services Overview -->
-<section class="section-padding" id="services-overview">
+<section class="section-padding">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title spacing-responsive" data-aos="fade-up">Layanan Unggulan Kami</h2>
-            <p class="section-subtitle text-responsive" data-aos="fade-up" data-aos-delay="100">Pilih layanan yang sesuai dengan kebutuhan penelitian Anda</p>
+            <h2 class="section-title" data-aos="fade-up">Layanan Unggulan Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pilih layanan yang sesuai dengan kebutuhan penelitian Anda</p>
         </div>
         
-        <div class="grid-responsive">
-            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 text-center p-4 border-0 shadow">
+                    <div class="feature-icon">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">✍️ Penulisan Artikel Akademik</h4>
-                    <p class="text-muted mb-4 text-responsive">Artikel original dengan metodologi yang kuat dan sesuai standar jurnal internasional.</p>
+                    <h4 class="fw-bold mb-3">✍️ Penulisan Artikel Akademik</h4>
+                    <p class="text-muted mb-4">Artikel original dengan metodologi yang kuat dan sesuai standar jurnal internasional.</p>
                     <ul class="list-unstyled text-start mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Research design & methodology</li>
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Literature review comprehensive</li>
@@ -72,18 +72,19 @@
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Academic writing standards</li>
                     </ul>
                     <div class="mt-auto">
+                        {{-- <div class="h5 text-primary fw-bold">Mulai dari Rp 15 juta</div> --}}
                         <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 text-center p-4 border-0 shadow">
+                    <div class="feature-icon">
                         <i class="fas fa-edit"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">📝 Editing & Proofreading</h4>
-                    <p class="text-muted mb-4 text-responsive">Professional editing dengan berbagai style guide (APA, MLA, Harvard, dll.)</p>
+                    <h4 class="fw-bold mb-3">📝 Editing & Proofreading</h4>
+                    <p class="text-muted mb-4">Professional editing dengan berbagai style guide (APA, MLA, Harvard, dll.)</p>
                     <ul class="list-unstyled text-start mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Grammar & language correction</li>
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Citation style formatting</li>
@@ -91,18 +92,19 @@
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Native English proofreading</li>
                     </ul>
                     <div class="mt-auto">
+                        {{-- <div class="h5 text-primary fw-bold">Mulai dari Rp 2 juta</div> --}}
                         <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 text-center p-4 border-0 shadow">
+                    <div class="feature-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">🔎 Parafrase & Anti Plagiarisme</h4>
-                    <p class="text-muted mb-4 text-responsive">Guarantee similarity di bawah 15% dengan tools premium dan parafrase expert.</p>
+                    <h4 class="fw-bold mb-3">🔎 Parafrase & Anti Plagiarisme</h4>
+                    <p class="text-muted mb-4">Guarantee similarity di bawah 15% dengan tools premium dan parafrase expert.</p>
                     <ul class="list-unstyled text-start mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Turnitin premium check</li>
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Expert paraphrasing</li>
@@ -110,18 +112,19 @@
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Multiple revision rounds</li>
                     </ul>
                     <div class="mt-auto">
+                        {{-- <div class="h5 text-primary fw-bold">Mulai dari Rp 1.5 juta</div> --}}
                         <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 text-center p-4 border-0 shadow">
+                    <div class="feature-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">🎯 Submit & Publikasi</h4>
-                    <p class="text-muted mb-4 text-responsive">Full handling dari submit hingga publish di jurnal Sinta 2–6, Scopus, atau WoS.</p>
+                    <h4 class="fw-bold mb-3">🎯 Submit & Publikasi</h4>
+                    <p class="text-muted mb-4">Full handling dari submit hingga publish di jurnal Sinta 2–6, Scopus, atau WoS.</p>
                     <ul class="list-unstyled text-start mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Journal selection strategy</li>
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Submission process handling</li>
@@ -129,18 +132,19 @@
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Publication guarantee</li>
                     </ul>
                     <div class="mt-auto">
+                        {{-- <div class="h5 text-primary fw-bold">Mulai dari Rp 8 juta</div> --}}
                         <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 text-center p-4 border-0 shadow">
+                    <div class="feature-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">🎓 Bimbingan Skripsi/Tesis/Disertasi</h4>
-                    <p class="text-muted mb-4 text-responsive">Mentoring intensif untuk penelitian akademik tingkat sarjana hingga doktoral.</p>
+                    <h4 class="fw-bold mb-3">🎓 Bimbingan Skripsi/Tesis/Disertasi</h4>
+                    <p class="text-muted mb-4">Mentoring intensif untuk penelitian akademik tingkat sarjana hingga doktoral.</p>
                     <ul class="list-unstyled text-start mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Research proposal development</li>
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Methodology consultation</li>
@@ -148,29 +152,32 @@
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Defense preparation</li>
                     </ul>
                     <div class="mt-auto">
+                        {{-- <div class="h5 text-primary fw-bold">Mulai dari Rp 10 juta</div> --}}
                         <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-chart-line"></i>
+            {{-- <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100 text-center p-4 border-0 shadow border-primary">
+                    <div class="badge bg-primary position-absolute top-0 start-50 translate-middle">TERPOPULER</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">📊 Data Analysis & Visualization</h4>
-                    <p class="text-muted mb-4 text-responsive">Analisis statistik dengan software profesional dan visualisasi data yang menarik.</p>
+                    <h4 class="fw-bold mb-3">🚀 Paket Premium</h4>
+                    <p class="text-muted mb-4">Full handling komprehensif dari writing hingga publish, dengan dedicated project manager.</p>
                     <ul class="list-unstyled text-start mb-4">
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SPSS, R, Python analysis</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Statistical interpretation</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional visualization</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Research methodology support</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>End-to-end service</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dedicated project manager</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Priority support 24/7</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Publication guarantee</li>
                     </ul>
                     <div class="mt-auto">
-                        <a href="#pricing" class="btn btn-outline-primary">Lihat Detail</a>
+                        <div class="h5 text-primary fw-bold">Mulai dari Rp 25 juta</div>
+                        <a href="#pricing" class="btn btn-primary">Pilih Paket</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -179,17 +186,17 @@
 <section id="pricing" class="section-padding bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title spacing-responsive" data-aos="fade-up">Paket Harga Berdasarkan Target Jurnal</h2>
-            <p class="section-subtitle text-responsive" data-aos="fade-up" data-aos-delay="100">Pilih target jurnal yang sesuai dengan kebutuhan penelitian Anda</p>
+            <h2 class="section-title" data-aos="fade-up">Paket Harga Berdasarkan Target Jurnal</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pilih target jurnal yang sesuai dengan kebutuhan penelitian Anda</p>
         </div>
         
         <!-- Non Sinta & International -->
-        <div class="grid-responsive mb-5">
-            <div class="pricing-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card card h-100 p-4 p-mobile-3 text-center">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-card card h-100 p-4 text-center">
                     <div class="card-body">
-                        <h3 class="fw-bold text-primary spacing-responsive">📄 NON SINTA</h3>
-                        <p class="text-muted mb-4 text-responsive">Jurnal nasional tidak terakreditasi Sinta</p>
+                        <h3 class="fw-bold text-primary">📄 NON SINTA</h3>
+                        <p class="text-muted mb-4">Jurnal nasional tidak terakreditasi Sinta</p>
                         
                         <div class="row mb-4">
                             <div class="col-6">
@@ -216,11 +223,11 @@
                 </div>
             </div>
             
-            <div class="pricing-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card card h-100 p-4 p-mobile-3 text-center">
+            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-card card h-100 p-4 text-center">
                     <div class="card-body">
-                        <h3 class="fw-bold text-primary spacing-responsive">🌍 INTERNATIONAL</h3>
-                        <p class="text-muted mb-4 text-responsive">Jurnal internasional non-indexed</p>
+                        <h3 class="fw-bold text-primary">🌍 INTERNATIONAL</h3>
+                        <p class="text-muted mb-4">Jurnal internasional non-indexed</p>
                         
                         <div class="row mb-4">
                             <div class="col-6">

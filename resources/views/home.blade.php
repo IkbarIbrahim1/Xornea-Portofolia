@@ -11,11 +11,11 @@
                 <h1 class="display-4 display-md-3 fw-bold mb-4 text-center text-lg-start">
                     Xornea – Where Your Research Finds Its Voice
                 </h1>
-                <p class="lead mb-4 text-center text-lg-start text-responsive">
+                <p class="lead mb-4 text-center text-lg-start">
                     Pendampingan publikasi jurnal Sinta hingga Scopus, cepat & terpercaya. 
                     Wujudkan impian penelitian Anda untuk tampil di panggung akademik internasional.
                 </p>
-                <div class="btn-group-responsive mb-5">
+                <div class="d-flex flex-column flex-md-row gap-3 mb-5 justify-content-center justify-content-lg-start">
                     <a href="{{ url('/contact') }}" class="btn btn-light btn-lg pulse">
                         <i class="fas fa-phone me-2"></i>Konsultasi Gratis
                     </a>
@@ -25,24 +25,30 @@
                 </div>
                 
                 <!-- Keunggulan Singkat -->
-                <div class="grid-responsive">
-                    <div class="feature-item text-center text-center-mobile">
-                        <div class="feature-icon-wrapper mb-2">
-                            <i class="fas fa-users-cog fs-2"></i>
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center feature-item">
+                            <div class="feature-icon-wrapper mb-2">
+                                <i class="fas fa-users-cog fs-2"></i>
+                            </div>
+                            <span class="fw-semibold">Multidisiplin Tim Ahli</span>
                         </div>
-                        <span class="fw-semibold text-responsive">Multidisiplin Tim Ahli</span>
                     </div>
-                    <div class="feature-item text-center text-center-mobile">
-                        <div class="feature-icon-wrapper mb-2">
-                            <i class="fas fa-shield-alt fs-2"></i>
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center feature-item">
+                            <div class="feature-icon-wrapper mb-2">
+                                <i class="fas fa-shield-alt fs-2"></i>
+                            </div>
+                            <span class="fw-semibold">100% Anti Plagiarisme</span>
                         </div>
-                        <span class="fw-semibold text-responsive">100% Anti Plagiarisme</span>
                     </div>
-                    <div class="feature-item text-center text-center-mobile">
-                        <div class="feature-icon-wrapper mb-2">
-                            <i class="fas fa-globe fs-2"></i>
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center feature-item">
+                            <div class="feature-icon-wrapper mb-2">
+                                <i class="fas fa-globe fs-2"></i>
+                            </div>
+                            <span class="fw-semibold">Terbukti Publish Global</span>
                         </div>
-                        <span class="fw-semibold text-responsive">Terbukti Publish Global</span>
                     </div>
                 </div>
             </div>
@@ -50,7 +56,15 @@
                 <div class="position-relative">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" 
                          alt="Research Team" class="img-fluid rounded-4 shadow-lg w-100">
-                    
+                    <div class="position-absolute top-0 start-0 bg-white rounded p-3 shadow m-3 animate-bounce-slow">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success fs-4 me-2"></i>
+                            <div>
+                                <div class="fw-bold">Artikel Diterima</div>
+                                <small class="text-muted">Q2 Scopus Journal</small>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Floating elements for interactivity -->
                     <div class="position-absolute bottom-0 end-0 p-3">
                         <div class="bg-primary text-white rounded-circle p-3 shadow animate-float">
@@ -77,53 +91,53 @@
 <!-- Mengapa Memilih Xornea -->
 <section class="section-padding">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                <h2 class="section-title spacing-responsive">Mengapa Peneliti Memilih Xornea?</h2>
-                <p class="section-subtitle text-responsive">Kami memahami tantangan dunia akademik Indonesia dan berkomitmen membantu Anda meraih publikasi impian.</p>
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="section-title">Mengapa Peneliti Memilih Xornea?</h2>
+                <p class="section-subtitle">Kami memahami tantangan dunia akademik Indonesia dan berkomitmen membantu Anda meraih publikasi impian.</p>
                 
-                <div class="home-features-grid">
-                    <div class="feature-item mb-mobile-4">
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
                         <div class="d-flex">
                             <div class="feature-icon me-3">
                                 <i class="fas fa-rocket"></i>
                             </div>
                             <div>
                                 <h5 class="fw-bold">Proses Cepat</h5>
-                                <p class="text-muted text-responsive">Timeline jelas dan terpantau real-time</p>
+                                <p class="text-muted">Timeline jelas dan terpantau real-time</p>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-item mb-mobile-4">
+                    <div class="col-sm-6 mb-4">
                         <div class="d-flex">
                             <div class="feature-icon me-3">
                                 <i class="fas fa-award"></i>
                             </div>
                             <div>
                                 <h5 class="fw-bold">Kualitas Terjamin</h5>
-                                <p class="text-muted text-responsive">Tim editor berpengalaman internasional</p>
+                                <p class="text-muted">Tim editor berpengalaman internasional</p>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-item mb-mobile-4">
+                    <div class="col-sm-6 mb-4">
                         <div class="d-flex">
                             <div class="feature-icon me-3">
                                 <i class="fas fa-lock"></i>
                             </div>
                             <div>
                                 <h5 class="fw-bold">Kerahasiaan</h5>
-                                <p class="text-muted text-responsive">Data dan naskah dijamin aman</p>
+                                <p class="text-muted">Data dan naskah dijamin aman</p>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="col-sm-6 mb-4">
                         <div class="d-flex">
                             <div class="feature-icon me-3">
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div>
                                 <h5 class="fw-bold">Support 24/7</h5>
-                                <p class="text-muted text-responsive">Konsultasi kapan saja Anda butuhkan</p>
+                                <p class="text-muted">Konsultasi kapan saja Anda butuhkan</p>
                             </div>
                         </div>
                     </div>
@@ -132,17 +146,8 @@
             <div class="col-lg-6" data-aos="fade-left">
                 <div class="position-relative">
                     <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=500&fit=crop" 
-                         alt="Team Working" class="img-fluid rounded-4 shadow-lg">
-                    <!-- Stats overlay -->
-                    <div class="position-absolute bottom-0 start-0 bg-white rounded p-3 shadow m-3 animate-bounce-slow">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-users text-primary fs-4 me-2"></i>
-                            <div>
-                                <div class="fw-bold">500+</div>
-                                <small class="text-muted">Happy Clients</small>
-                            </div>
-                        </div>
-                    </div>
+                         alt="Team Working" class="img-fluid rounded-4">
+                    
                 </div>
             </div>
         </div>
@@ -153,44 +158,44 @@
 <section class="section-padding bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title spacing-responsive" data-aos="fade-up">Layanan Unggulan Kami</h2>
-            <p class="section-subtitle text-responsive" data-aos="fade-up" data-aos-delay="100">Solusi lengkap untuk setiap kebutuhan publikasi akademik Anda</p>
+            <h2 class="section-title" data-aos="fade-up">Layanan Unggulan Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Solusi lengkap untuk setiap kebutuhan publikasi akademik Anda</p>
         </div>
         
-        <div class="grid-responsive">
-            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow service-card">
-                    <div class="feature-icon mb-3 mx-auto">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 text-center p-4 border-0 shadow service-card">
+                    <div class="feature-icon mb-3">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">Academic Writing</h4>
-                    <p class="text-muted mb-4 text-responsive">Penulisan artikel original dengan metodologi yang kuat dan sesuai standar jurnal internasional.</p>
+                    <h4 class="fw-bold mb-3">Academic Writing</h4>
+                    <p class="text-muted mb-4">Penulisan artikel original dengan metodologi yang kuat dan sesuai standar jurnal internasional.</p>
                     <div class="mt-auto">
                         <a href="{{ url('/services') }}" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow service-card">
-                    <div class="feature-icon mb-3 mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 text-center p-4 border-0 shadow service-card">
+                    <div class="feature-icon mb-3">
                         <i class="fas fa-edit"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">Editing & Proofreading</h4>
-                    <p class="text-muted mb-4 text-responsive">Professional editing dengan berbagai style guide dan native English proofreading.</p>
+                    <h4 class="fw-bold mb-3">Editing & Proofreading</h4>
+                    <p class="text-muted mb-4">Professional editing dengan berbagai style guide dan native English proofreading.</p>
                     <div class="mt-auto">
                         <a href="{{ url('/services') }}" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>
                 </div>
             </div>
             
-            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 text-center p-4 p-mobile-3 border-0 shadow service-card">
-                    <div class="feature-icon mb-3 mx-auto">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 text-center p-4 border-0 shadow service-card">
+                    <div class="feature-icon mb-3">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h4 class="fw-bold mb-3 spacing-responsive">Anti Plagiarisme</h4>
-                    <p class="text-muted mb-4 text-responsive">Guarantee similarity di bawah 15% dengan tools premium dan parafrase expert.</p>
+                    <h4 class="fw-bold mb-3">Anti Plagiarisme</h4>
+                    <p class="text-muted mb-4">Guarantee similarity di bawah 15% dengan tools premium dan parafrase expert.</p>
                     <div class="mt-auto">
                         <a href="{{ url('/services') }}" class="btn btn-outline-primary">Lihat Detail</a>
                     </div>

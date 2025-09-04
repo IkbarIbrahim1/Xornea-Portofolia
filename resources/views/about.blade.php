@@ -208,16 +208,6 @@
         </div>
         
         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card border-0 shadow text-center">
-                    <img src="{{ asset('assets/images/team/bambang.jpg') }}" 
-                         alt="Bambang" class="card-img-top" style="height: 300px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="fw-bold">Bambang</h5>
-                        <h5 class="">Chief Executive Officer</h5>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card border-0 shadow text-center">
                     <img src="{{ asset('assets/images/team/arya.jpg') }}" 
@@ -236,6 +226,16 @@
                             <h5 class="fw-bold">Baihaqi</h5>
                             <h5 class="">Chief Technology Officer</h5>
                         </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow text-center">
+                    <img src="{{ asset('assets/images/team/bambang.jpg') }}" 
+                         alt="Bambang" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Bambang</h5>
+                        <h5 class="">Chief Executive Officer</h5>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">

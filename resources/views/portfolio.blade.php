@@ -9,7 +9,7 @@
         <div class="row align-items-center min-vh-60">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                 <h1 class="display-4 display-md-3 fw-bold mb-4 text-center text-lg-start">Portofolio & Keberhasilan</h1>
-                <p class="lead text-center text-lg-start mb-4 text-responsive">Bukti nyata kesuksesan klien kami dalam meraih publikasi di jurnal-jurnal bereputasi internasional.</p>
+                <p class="lead text-center text-lg-start mb-4">Bukti nyata kesuksesan klien kami dalam meraih publikasi di jurnal-jurnal bereputasi internasional.</p>
                 
             </div>
             <div class="col-12 col-lg-6" data-aos="fade-left">
@@ -44,32 +44,32 @@
 <section class="section-padding">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title spacing-responsive" data-aos="fade-up">Published Articles Portfolio</h2>
-            <p class="section-subtitle text-responsive" data-aos="fade-up" data-aos-delay="100">Bukti nyata keberhasilan publikasi dari berbagai disiplin ilmu</p>
+            <h2 class="section-title" data-aos="fade-up">Published Articles Portfolio</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Bukti nyata keberhasilan publikasi dari berbagai disiplin ilmu</p>
         </div>
         
         <!-- Article 1: JOSH Journal -->
-        <div class="mb-5">
-            <div class="portfolio-item" data-aos="fade-up">
+        <div class="row mb-5">
+            <div class="col-lg-12" data-aos="fade-up">
                 <div class="card border-0 shadow-lg">
-                    <div class="card-body p-4 p-mobile-3">
-                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center mb-4">
-                            <div class="feature-icon text-success me-3 mb-3 mb-md-0">
+                    <div class="card-body p-5">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="feature-icon text-success me-3">
                                 <i class="fas fa-book-open"></i>
                             </div>
                             <div>
-                                <span class="badge bg-success text-white px-3 py-2 me-2 mb-2">PUBLISHED</span>
+                                <span class="badge bg-success text-white px-3 py-2 me-2">PUBLISHED</span>
                                 <span class="badge bg-primary text-white px-3 py-2">HUKUM ISLAM</span>
                             </div>
                         </div>
                         
-                        <h4 class="fw-bold mb-3 text-primary spacing-responsive">Persepsi Mahasiswa pada Isu Penggunaan Ghibli Art AI di Media Sosial Sebagai Mata Pencaharian</h4>
+                        <h4 class="fw-bold mb-3 text-primary">Persepsi Mahasiswa pada Isu Penggunaan Ghibli Art AI di Media Sosial Sebagai Mata Pencaharian</h4>
                         
                         <div class="row mb-4">
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <p class="text-responsive"><strong>Jurnal:</strong> JOSH (Journal of Sharia), Universitas Suryakancana</p>
-                                <p class="text-responsive"><strong>Status:</strong> <span class="text-success fw-bold">Published (Vol. 4 No. 2, 2025)</span></p>
-                                <p class="text-responsive"><strong>Scope:</strong> Hukum Islam, Pemikiran Keislaman Kontemporer, Interaksi Agama & Sosial Budaya</p>
+                            <div class="col-md-6">
+                                <p><strong>Jurnal:</strong> JOSH (Journal of Sharia), Universitas Suryakancana</p>
+                                <p><strong>Status:</strong> <span class="text-success fw-bold">Published (Vol. 4 No. 2, 2025)</span></p>
+                                <p><strong>Scope:</strong> Hukum Islam, Pemikiran Keislaman Kontemporer, Interaksi Agama & Sosial Budaya</p>
                             </div>
                             <div class="col-md-6">
                                 <div class="bg-light p-3 rounded">
@@ -93,11 +93,11 @@
         </div>
 
         <!-- Article 2: JOECY Journal -->
-        <div class="mb-5">
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mb-5">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="card border-0 shadow-lg">
-                    <div class="card-body p-4 p-mobile-3">
-                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center mb-4">
+                    <div class="card-body p-5">
+                        <div class="d-flex align-items-center mb-4">
                             <div class="feature-icon text-warning me-3">
                                 <i class="fas fa-chart-line"></i>
                             </div>

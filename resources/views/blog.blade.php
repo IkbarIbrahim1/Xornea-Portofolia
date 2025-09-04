@@ -9,9 +9,9 @@
         <div class="row align-items-center min-vh-50">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                 <h1 class="display-4 display-md-3 fw-bold mb-4 text-center text-lg-start">Knowledge Center</h1>
-                <p class="lead mb-4 text-center text-lg-start text-responsive">Insights, tips, dan panduan lengkap untuk membantu perjalanan publikasi akademik Anda.</p>
+                <p class="lead mb-4 text-center text-lg-start">Insights, tips, dan panduan lengkap untuk membantu perjalanan publikasi akademik Anda.</p>
                 <!-- Quick Access Buttons -->
-                <div class="btn-group-responsive">
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
                     <button class="btn btn-primary btn-lg" onclick="scrollToSection('faq-section')">
                         <i class="fas fa-question-circle me-2"></i>FAQ Interaktif
                     </button>
